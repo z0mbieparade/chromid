@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Chromid (Average background color + text) | z0m.bi</title>
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<!-- begin script -->
+<div class="col">
+  <div class="row">
+    <div class="cell">
+      <label>Text</label>
+      <input id='text_input' placeholder="type text here" value="Abcdefghijklmnop"/>
+    </div>
+
+    <div class="cell">
+      <label>Font</label>
+      <input id='font' placeholder="font" value='30px monospace'/>
+    </div>
+
+    <div class="cell">
+      <label>Color</label>
+      <input id='text_color' placeholder="text color" value="#0F0"/>
+    </div>
+
+    <div class="cell">
+      <label>Background</label>
+      <input id='background_color' placeholder="background color" value="#00F"/>
+    </div>
+
+    <div class="cell">
+      <button id="update" onclick="update()">Update</button>
+    </div>
+  </div>
+
+  <div class="row row-center">
+    <div class="cell">
+      <canvas id='text_canvas' height="50px" width="50px"></canvas>
+    </div>
+
+    <div class="cell" id="avr_label">
+      <label>Averages to -></label>
+    </div>
+
+    <div class="cell" id="avr_rgb"></div>
+  </div>
+</div>
+<!-- end script -->
+<script  src="script.js"></script>
+</body>
+</html>

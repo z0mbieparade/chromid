@@ -1,0 +1,56 @@
+body, html {
+  background: transparent;
+}
+
+/* begin script */
+.col {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.col, .cell
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.row
+{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+.row-center .cell {
+  justify-content: center;
+  text-align: center;
+}
+
+.cell {
+  justify-content: flex-end;
+  margin: 3px;
+}
+
+.cell * {
+  flex: 0 0 auto;
+}
+
+label, input
+{
+  flex: 0 0 160px;
+  width: 160px;
+  padding: 3px;
+}
+
+#avr_label
+{
+  width: auto;
+  text-align: center;
+}
+
+#avr_rgb {
+  text-align: center;
+  flex: 1 1 auto;
+  padding: 5px 10px;
+}
+/* end script */
