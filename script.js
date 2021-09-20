@@ -14,7 +14,6 @@ function update(){
   avr_rgb_input.style.backgroundColor = "rgb(" + avr_rgb.r + "," + avr_rgb.g + "," + avr_rgb.b + ")";
   avr_rgb_input.style.color = b_or_w;
   avr_rgb_input.innerHTML = "rgb(" + avr_rgb.r + "," + avr_rgb.g + "," + avr_rgb.b + ") / " + hex;
-  console.log(avr_rgb);
 }
 
 function componentToHex(c) {
